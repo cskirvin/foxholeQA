@@ -7,8 +7,8 @@ fixture('Login Feature');
 test('Given a user can log in When the user adds a product then after checkoput the details are verified.', async t => {
 
     // Given a user can log in
-    // await login_page.checkLoginPageTitleText();
-    // await login_page.loginWithInvalidUser('invalid');
+    await login_page.checkLoginPageTitleText();
+    await login_page.loginWithInvalidUser('invalid');
     await login_page.loginWithUser();
     await main_page.checkMainPageTitleText()
 
